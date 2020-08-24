@@ -29,7 +29,7 @@ twitter_username: LexisNexis
 github_username:  lnlp-open-source
 
 # Build settings
-theme: minima
+theme: jekyll-theme-minimal
 
 plugins:
   - jekyll-feed
