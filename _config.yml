@@ -18,11 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: LexisNexis Legal & Professional Tech Blog
-email: graham.brooks@lexisnexis.com
+title: LexisNexis Legal & Professional Engineering
+email: engineering@lexisnexis.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Be sure to come back later when we have some content. At the moment
-  this is site is still under construction
+  This blog is curated and maintained by the LexisNexis Product Development Team. Our aim is to provide insights,
+  expertise, and commentary on current trends within software engineering.
+disclaimer: >- # this means to ignore newlines until "baseurl:"
+  These blogs are published for information purposes only and can be statements of opinion. Although LexisNexis
+  Legal & Professional checks the accuracy of all information at the time of publishing the blogs, no representations
+  or warranties are expressed or implied as to the blog, its contents and any accompanying materials and it should not
+  be relied upon for acting in specific circumstances. Although links to external websites on any blog posts are tested
+  and deemed accurate at the time of the blog posting, LexisNexis Legal & Professional accepts no liability for such
+  links to external websites and does not endorse or warrant in any way any materials available through such links or
+  any privacy or other practices of such sites.
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: LexisNexis
