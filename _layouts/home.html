@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+
+
+<section class="recent-post">
+    <ul>
+        <h2 style="padding-bottom: 40px; color:#00172E">Recent Stories</h2>
+            {% for post in site.posts limit:1 %}
+            <li style="padding-bottom: 15px">
+                <a style="color: black;" class="blog__title h4" href="{{ post.url }}">{{ post.title }}</a>
+                <p style="padding-bottom: 5px; padding-top: 10px" class="post__desc">{{ post.description }}</p>
+                <span style="font-size: 14px" class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+                <div style="padding-bottom:5px; padding-top: 15px"><a class="blog__link" href="{{ post.url }}">Read More<img style="padding-left: 10px; padding-bottom: 3px" src="assets/img/arrow-right.png"/> </a></div>
+            </li>      
+        {% endfor %}
+    </ul>
+</section>
+
+<section class="older-posts">
+    <h2 style="padding-bottom: 40px; color:#00172E">Older Stories</h2>
+        <ul>
+            {% for post in site.posts offset:1 limit:4 %}
+                <li style="padding-bottom: 15px">
+                    <a style="color: black" class="blog__title h4" href="{{ post.url }}">{{ post.title }}</a>
+                    <p style="padding-bottom: 5px; padding-top: 10px" class="post__desc">{{ post.description }}</p>
+                    <span style="font-size: 14px" class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
+                    <div style="padding-bottom:35px; padding-top: 15px"><a class="blog__link" href="{{ post.url }}">Read More<img style="padding-left: 10px; padding-bottom: 3px" src="assets/img/arrow-right.png"/> </a></div>
+                </li>      
+            {% endfor %}
+        </ul>
+</section>

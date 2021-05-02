@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+  </head>
+  <body>
+    
+  <nav class="navbar navbar-light bg-dark static-top">
+      <div class="container">
+          <a class="navbar-brand" href="http://127.0.0.1:4000/"><span style="color: white">LexisNexis</span> <span style="color:#E8171F ">Legal Professional Blog</span></a>
+          <a href="#!" style="color: white">About</a>
+      </div>
+  </nav>
+  <!-- Masthead-->
+  <header class="text-white bg-light">
+      <div class="overlay"></div>
+      <div class="container">
+          <div class="row" style="text-align: left; color: black">
+              <div class="col-12 mx-auto" style="color: #00172E;"><h1>{{page.title}}</h1></div>
+              <div class="col-12 mb-4" >
+                      {{page.description}}
+              </div>
+              <div class="col-6" ></div>
+            
+            </div>
+          </div>
+      </div>
+  </header>
+
+  <section >
+      <div class="container">
+          <div style="padding-bottom:100px">
+            {{content}}
+          </div>
+      </div>
+  </section>
+
+<!-- Footer-->
+<footer class="footer bg-dark">
+    <div class="container">
+        <div class="row">
+                <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+                  <ul class="list-inline mb-5">
+                      <li> <img src="assets/img/LNlogo.svg"/> </li>
+                  </ul>
+                  <ul class="list-inline mb-2 small">
+                      <li class="list-inline-item"></li>
+                  </ul>
+                </div>                
+                <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+                  <ul class="list-inline mb-5">
+                    <li class="list-inline-item mr-4">
+                        <a href="#!" style="color: #ffffff"><i class="fab fa-facebook fa-2x"></i></a>
+                    </li>
+                    <li class="list-inline-item mr-4">
+                        <a href="#!" style="color: #ffffff"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li class="list-inline-item mr-4">
+                        <a href="#!" style="color: #ffffff"><i class="fab fa-linkedin fa-2x"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#!" style="color: #ffffff"><i class="fab fa-youtube fa-2x"></i></a>
+                    </li>
+                </ul>
+                <ul class="list-inline mb-2 small">
+                    <li class="list-inline-item"><a href="#!" style="color: #CAD6E1">About</a></li>
+                    <li class="list-inline-item"></li>
+                    <li class="list-inline-item"><a href="#!" style="color: #CAD6E1">Our Company</a></li>
+                    <li class="list-inline-item"></li>
+                    <li class="list-inline-item"><a href="#!"style="color: #CAD6E1">Communities</a></li>
+                    <li class="list-inline-item"></li>
+                    <li class="list-inline-item"><a href="#!"style="color: #CAD6E1">Contact</a></li>
+                </ul>
+            </div>
+          </div>
+      </div>
+
+
+
+
+      
+  </footer>
+  </body>
+</html>
