@@ -15,7 +15,7 @@
         <!-- Core theme CSS (includes Bootstrap)-->
   </head>
   <body>
-    
+
   <nav class="navbar navbar-light bg-dark static-top">
       <div class="container">
           <a class="navbar-brand" href="http://127.0.0.1:4000/"><span style="color: white">LexisNexis</span> <span style="color:#E8171F ">Legal Professional Engineering</span></a>
@@ -31,8 +31,15 @@
               <div class="col-12 mb-4" >
                       {{page.description}}
               </div>
-              <div class="col-6" ></div>
-            
+              <div class="col-6" >
+                  {% assign author = site.data.authors[page.author] %}
+                  {% if author %}
+                  <span>
+                        Written by <a href="{{ author.linkedin }}">{{ author.name }}</a>
+                    </span>
+                  {% endif %}
+
+              </div>
             </div>
           </div>
       </div>
@@ -45,7 +52,6 @@
           </div>
       </div>
   </section>
-
   {% include footer.html %}
   </body>
 </html>
