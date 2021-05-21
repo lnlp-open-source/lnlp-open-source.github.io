@@ -35,6 +35,7 @@
                   {% assign author = site.data.authors[page.author] %}
                   {% if author %}
                   <span>
+                      <img src="https://avatars.githubusercontent.com/{{ author.userid }}" style="border-radius: 50%;width:50px">
                         Written by <a href="{{ author.linkedin }}">{{ author.name }}</a>
                     </span>
                   {% endif %}

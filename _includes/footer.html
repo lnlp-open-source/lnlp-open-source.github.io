@@ -1,3 +1,6 @@
+
+{% assign links = site.data.links %}
+
 <footer class="footer bg-dark">
     <div class="container">
         <div class="row">
@@ -12,33 +15,36 @@
             <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
                 <ul class="list-inline mb-5">
                     <li class="list-inline-item mr-4">
-                        <a href="#!" style="color: #ffffff"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="{{ links.github }}" style="color: #ffffff"><i class="fab fa-github fa-2x"></i></a>
                     </li>
                     <li class="list-inline-item mr-4">
-                        <a href="#!" style="color: #ffffff"><i class="fab fa-twitter-square fa-2x"></i></a>
+                        <a href="{{ links.facebook }}" style="color: #ffffff"><i class="fab fa-facebook fa-2x"></i></a>
                     </li>
                     <li class="list-inline-item mr-4">
-                        <a href="#!" style="color: #ffffff"><i class="fab fa-linkedin fa-2x"></i></a>
+                        <a href="{{ links.twitter }}" style="color: #ffffff"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    </li>
+                    <li class="list-inline-item mr-4">
+                        <a href="{{ links.linkedin }}" style="color: #ffffff"><i class="fab fa-linkedin fa-2x"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#!" style="color: #ffffff"><i class="fab fa-youtube fa-2x"></i></a>
+                        <a href="{{ links.youtube }}" style="color: #ffffff"><i class="fab fa-youtube fa-2x"></i></a>
                     </li>
                 </ul>
                 <ul class="list-inline mb-2 small">
                     <li class="list-inline-item"><a href="#!" style="color: #CAD6E1">About</a></li>
                     <li class="list-inline-item"></li>
-                    <li class="list-inline-item"><a href="#!" style="color: #CAD6E1">Our Company</a></li>
+                    <li class="list-inline-item"><a href="{{ links.lexisnexis-our-company }} " style="color: #CAD6E1">Our Company</a></li>
                     <li class="list-inline-item"></li>
                     <li class="list-inline-item"><a href="#!" style="color: #CAD6E1">Communities</a></li>
                     <li class="list-inline-item"></li>
-                    <li class="list-inline-item"><a href="#!" style="color: #CAD6E1">Contact</a></li>
+                    <li class="list-inline-item"><a href="{{ links.lexisnexis-home }}" style="color: #CAD6E1">Contact</a></li>
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-12 h-100 text-center text-lg-left my-auto">
                 <ul class="list-inline mb-12">
-                    <li style="color: #ffffff">{{site.disclaimer}}</li>
+                    <li style="color: rgba(255,255,255,0.51);font-size: xx-small">{{site.disclaimer}}</li>
                 </ul>
             </div>
         </div>

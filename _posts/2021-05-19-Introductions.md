@@ -16,3 +16,4 @@ Developing software has always accompanied by change. Changes in process, change
 everything continues to be in a state of change.
 
 By sharing our stories and insights we hope to contribute something of value that can help others in their learning journey.
+
