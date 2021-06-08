@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+    <!-- Dev note: Include new CSS as part of test. Will be merged into main.css later -->
+    <style>
+        /* 
+        // Dev notes
+        Use "ln-*" prefix to differentiate between new custom CSS and standard styling from main.css (i.e. Bootstrap?)
+        */
+        /* Post header */ 
+        .ln-post-header {}
+        .ln-post-header__inner {
+            padding-left: 175px;
+            padding-right: 175px;
+        }
+
+        .ln-post-header__author {
+            margin-bottom: 20px;
+        }
+
+        /* Post body */
+        .ln-post-content {
+            padding-left: 160px;
+            padding-right: 160px;
+            padding-top: 40px;
+        }
+        
+        .ln-post-content h1 {
+
+        }
+
+        .ln-post-content h2 {
+            
+        }
+
+        .ln-post-content p + h2 {
+            margin-top: 50px;
+        }
+
+        .ln-post-content p {
+
+        }
+
+        .ln-post-content p:first-child {
+            margin-top: 0;
+        }
+
+        .ln-post-content p + p {
+            margin-top: 30px
+        }
+
+        .ln-post-content img {
+            margin-left: -160px;
+            margin-right: -160px;
+            width: calc(100% + 320px);
+        }
+
+        .ln-post-content p + img {
+            margin-top: 30px;
+        }
+    </style>
+
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+  </head>
+  <body>
+
+  <nav class="navbar navbar-light bg-dark static-top">
+      <div class="container">
+          <a class="navbar-brand" href="http://127.0.0.1:4000/"><span style="color: white">LexisNexis</span> <span style="color:#E8171F ">Legal Professional Engineering</span></a>
+          <a href="/about/" style="color: white">About</a>
+      </div>
+  </nav>
+  <!-- Masthead-->
+  <header class="text-white bg-light ln-post-header">
+
+    <div class="overlay"></div>
+        <div class="container ln-post-header__inner">
+            <div class="row" style="text-align: left; color: black">
+                <div class="col-12 mx-auto" style="color: #00172E;"><h1>{{page.title}}</h1></div>
+                <div class="col-12 mb-4" >
+                        {{page.description}}
+                </div>
+                <div class="col-6 ln-post-header__author">
+                    {% assign author = site.data.authors[page.author] %}
+                    {% if author %}
+                    <span>
+                        <img src="https://avatars.githubusercontent.com/{{ author.userid }}" style="border-radius: 50%;width:50px">
+                            Written by <a href="{{ author.linkedin }}">{{ author.name }}</a>
+                        </span>
+                    {% endif %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+        
+  </header>
+
+  <section >
+      <div class="container">
+          <div style="padding-bottom:100px" class="ln-post-content">
+            {{content}}
+          </div>
+      </div>
+  </section>
+  {% include footer.html %}
+  </body>
+</html>
