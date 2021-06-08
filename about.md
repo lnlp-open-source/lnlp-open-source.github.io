@@ -13,5 +13,5 @@ We love to code, and continuous learning, experimentation and openness are a cor
 
 We are only starting out so please stay tuned for growing content on software development. We will be covering  general development and engineering practices, specialist topics like automated testing and specialist challenges from scale, as well as the people side, like empowered, autonomous teams.
 
-Got any questions or feedback? We'd love to hear from you @????
+Want to be part of the team? Check out our careers site at https://www.lexisnexis.com/en-us/about-us/careers.page
 

@@ -11,6 +11,12 @@ layout: default
         {% assign author = site.data.authors[post.author] %}
         <li style="padding-bottom: 15px">
             <a style="color: black;" class="blog__title h4" href="{{ post.url }}">{{ post.title }}</a>
+            {% if post.pageThumbnail %}
+                <div style="overflow: hidden; height: 450px; position: relative; margin: 20px 0 0;">
+                    <img alt="{{post.pageThumbnailAlt}}" src="{{post.pageThumbnail}}" style=" max-width: 100%; object-fit: contain; position: absolute;
+                    top: 50%; left: 0; transform: translate(0,-50%);" />
+                </div>
+            {% endif %}
             <p style="padding-bottom: 5px; padding-top: 10px" class="post__desc">{{ post.description }}</p>
             <span style="font-size: 14px"
                   class="postDate">{{ post.date | date: "%b %-d, %Y" }} by {{ author.name }}</span>
@@ -31,6 +37,12 @@ layout: default
         {% assign author = site.data.authors[post.author] %}
         <li style="padding-bottom: 15px">
             <a style="color: black" class="blog__title h4" href="{{ post.url }}">{{ post.title }}</a>
+            {% if post.pageThumbnail %}
+                <div style="overflow: hidden; height: 450px; position: relative; margin: 20px 0 0;">
+                    <img alt="{{post.pageThumbnailAlt}}" src="{{post.pageThumbnail}}" style=" max-width: 100%; object-fit: contain; position: absolute;
+                    top: 50%; left: 0; transform: translate(0,-50%);" />
+                </div>
+            {% endif %}
             <p style="padding-bottom: 5px; padding-top: 10px" class="post__desc">{{ post.description }}</p>
             <span style="font-size: 14px"
                   class="postDate">{{ post.date | date: "%b %-d, %Y" }} by {{ author.name }}</span>
