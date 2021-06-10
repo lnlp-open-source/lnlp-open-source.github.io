@@ -1,6 +1,6 @@
 ---
 layout: stories-with-images
-title: Introductions (with images)
+title: Welcome to our new Engineering Blog
 description: A short introduction to this new blog sharing our software development journey
 author: graham_brooks
 hero:
