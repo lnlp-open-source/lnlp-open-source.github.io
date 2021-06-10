@@ -3,8 +3,9 @@ layout: stories-with-images
 title: Introductions (with images)
 description: A short introduction to this new blog sharing our software development journey
 author: graham_brooks
-pageThumbnail: '/images/daniel-cartin-LgHNehAIcOs-unsplash.jpg'
-pageThumbnailAlt: Introducing the LexisNexis engineering blog
+hero:
+    href: '/images/daniel-cartin-LgHNehAIcOs-unsplash.jpg'
+    alt: Introducing the LexisNexis engineering blog
 ---
 
 Sitting down to write this first post in a new blog that will over time represent engineering at LexisNexis is a daunting task. This is a new venture. The company has a long history providing applications and services to the legal profession but blogging about tech is new. Check out our web site [LexisNexis Legal & Professional](https://www.lexisnexis.com/en-us/about-us/about-us.page) for details.

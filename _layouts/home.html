@@ -11,9 +11,9 @@ layout: default
         {% assign author = site.data.authors[post.author] %}
         <li style="padding-bottom: 15px">
             <a style="color: black;" class="blog__title h4" href="{{ post.url }}">{{ post.title }}</a>
-            {% if post.pageThumbnail %}
+            {% if post.hero.href %}
                 <div style="overflow: hidden; height: 450px; position: relative; margin: 20px 0 0;">
-                    <img alt="{{post.pageThumbnailAlt}}" src="{{post.pageThumbnail}}" style=" max-width: 100%; object-fit: contain; position: absolute;
+                    <img alt="{{post.hero.alt}}" src="{{post.hero.href}}" style=" max-width: 100%; object-fit: contain; position: absolute;
                     top: 50%; left: 0; transform: translate(0,-50%);" />
                 </div>
             {% endif %}
@@ -37,9 +37,9 @@ layout: default
         {% assign author = site.data.authors[post.author] %}
         <li style="padding-bottom: 15px">
             <a style="color: black" class="blog__title h4" href="{{ post.url }}">{{ post.title }}</a>
-            {% if post.pageThumbnail %}
+            {% if post.hero.href %}
                 <div style="overflow: hidden; height: 450px; position: relative; margin: 20px 0 0;">
-                    <img alt="{{post.pageThumbnailAlt}}" src="{{post.pageThumbnail}}" style=" max-width: 100%; object-fit: contain; position: absolute;
+                    <img alt="{{post.hero.alt}}" src="{{post.hero.href}}" style=" max-width: 100%; object-fit: contain; position: absolute;
                     top: 50%; left: 0; transform: translate(0,-50%);" />
                 </div>
             {% endif %}

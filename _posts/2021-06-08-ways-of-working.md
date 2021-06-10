@@ -3,8 +3,9 @@ layout: stories-with-images
 title: New job, fully remote, in a global pandemic - how our ways of working helped me feel part of a team
 description: A story about how our engineering team collaborates in a remote set-up 
 author: Emili-BR
-pageThumbnail: '/images/danielle-macinnes-IuLgi9PWETU-unsplash.jpg'
-pageThumbnailAlt: coffee mug with the word "begin" on a wooden table
+hero:
+    href: '/images/danielle-macinnes-IuLgi9PWETU-unsplash.jpg'
+    alt: coffee mug with the word "begin" on a wooden table
 ---
 
 Starting a new job is exciting but it's always hard. You need to find your feet, figure out who is who, and who does what, what your immediate priorities are, how they fit with the wider organisation, what's the expected standard, etc. It's even harder when you're based at home and your whole team is remote and you have never met them before.
