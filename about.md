@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: about-no-button
 title: About LexisNexis Legal & Professional Engineering
 permalink: /about/
 description: Legal & Professional (LNLP) engineering blog tells the story of our challenges and our way of solving them. Read about architecture, application and content engineering, written by our engineers.
