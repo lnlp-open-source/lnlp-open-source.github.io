@@ -10,12 +10,11 @@ layout: default
         {% for post in site.posts limit:1 %}
         {% assign author = site.data.authors[post.author] %}
         <li style="padding-bottom: 15px">
-            <a style="color: black;" class="blog__title h4" href="{{ post.url }}">{{ post.title }}</a>
+            <a style="color: black;" class="blog__title h4 pb-4" href="{{ post.url }}">{{ post.title }}</a>
             {% if post.hero.href %}
-                <div style="overflow: hidden; height: 450px; position: relative; margin: 20px 0 0;">
-                    <img alt="{{post.hero.alt}}" src="{{post.hero.href}}" style=" max-width: 100%; object-fit: contain; position: absolute;
-                    top: 50%; left: 0; transform: translate(0,-50%);" />
-                </div>
+                <!-- <div style="overflow: hidden; height: 450px; position: relative; margin: 5px 0 0;"> -->
+                    <img alt="{{post.hero.alt}}" src="{{post.hero.href}}" style="margin-top: 8px; max-width: 100%; max-height: 500px; object-fit: cover; display: block;" />
+                <!-- </div> -->
             {% endif %}
             <p style="padding-bottom: 5px; padding-top: 10px" class="post__desc">{{ post.description }}</p>
             <span style="font-size: 14px"
@@ -38,10 +37,9 @@ layout: default
         <li style="padding-bottom: 15px">
             <a style="color: black" class="blog__title h4" href="{{ post.url }}">{{ post.title }}</a>
             {% if post.hero.href %}
-                <div style="overflow: hidden; height: 450px; position: relative; margin: 20px 0 0;">
-                    <img alt="{{post.hero.alt}}" src="{{post.hero.href}}" style=" max-width: 100%; object-fit: contain; position: absolute;
-                    top: 50%; left: 0; transform: translate(0,-50%);" />
-                </div>
+                <!-- <div style="overflow: hidden; height: 450px; position: relative; margin: 20px 0 0;"> -->
+                    <img alt="{{post.hero.alt}}" src="{{post.hero.href}}" style="margin-top: 8px; max-width: 100%; max-height: 500px; object-fit: cover; display: block;">
+                <!-- </div> -->
             {% endif %}
             <p style="padding-bottom: 5px; padding-top: 10px" class="post__desc">{{ post.description }}</p>
             <span style="font-size: 14px"
