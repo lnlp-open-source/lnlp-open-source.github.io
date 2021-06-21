@@ -7,7 +7,7 @@ layout: default
 <section class="recent-post">
     <ul>
         <h2 style="padding-bottom: 40px; color:#00172E">Recent Stories</h2>
-        {% for post in site.posts limit:1 %}
+        {% for post in site.posts%}
         {% assign author = site.data.authors[post.author] %}
         <li style="padding-bottom: 15px">
             <a style="color: black;" class="blog__title h4 pb-4" href="{{ post.url }}">{{ post.title }}</a>
@@ -28,27 +28,3 @@ layout: default
 </section>
 
 
-{% if post_count > 1 %}
-<section class="older-posts">
-    <h2 style="padding-bottom: 40px; color:#00172E">Older Stories</h2>
-    <ul>
-        {% for post in site.posts limit: 3 offset: continue %}
-        {% assign author = site.data.authors[post.author] %}
-        <li style="padding-bottom: 15px">
-            <a style="color: black" class="blog__title h4" href="{{ post.url }}">{{ post.title }}</a>
-            {% if post.hero.href %}
-                <!-- <div style="overflow: hidden; height: 450px; position: relative; margin: 20px 0 0;"> -->
-                    <img alt="{{post.hero.alt}}" src="{{post.hero.href}}" style="margin-top: 8px; max-width: 100%; max-height: 500px; object-fit: cover; display: block;">
-                <!-- </div> -->
-            {% endif %}
-            <p style="padding-bottom: 5px; padding-top: 10px" class="post__desc">{{ post.description }}</p>
-            <span style="font-size: 14px"
-                  class="postDate">{{ post.date | date: "%b %-d, %Y" }} by {{ author.name }}</span>
-            <div style="padding-bottom:35px; padding-top: 15px"><a class="blog__link" href="{{ post.url }}">Read
-                More<img style="padding-left: 10px; padding-bottom: 3px" src="assets/img/arrow-right.png"
-                         alt="read article"/> </a></div>
-        </li>
-        {% endfor %}
-    </ul>
-</section>
-{% endif %}
