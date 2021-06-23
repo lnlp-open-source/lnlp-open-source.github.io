@@ -6,7 +6,6 @@ layout: default
 
 <section class="recent-post">
     <ul>
-        <h2 style="padding-bottom: 40px; color:#00172E">Recent Stories</h2>
         {% for post in site.posts%}
         {% assign author = site.data.authors[post.author] %}
         <li style="padding-bottom: 15px">
@@ -22,7 +21,8 @@ layout: default
             <div style="padding-bottom:5px; padding-top: 15px"><a class="blog__link" href="{{ post.url }}">Read More<img
                     style="padding-left: 10px; padding-bottom: 3px" src="assets/img/arrow-right.png"
                     alt="read article"/> </a></div>
-        </li>
+                    <hr/>
+                </li>
         {% endfor %}
     </ul>
 </section>
