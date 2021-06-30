@@ -4,5 +4,5 @@ description: Legal & Professional (LNLP) engineering blog tells the story of our
 layout: home
 ---
 
-This is some generic content
+This content is ignored. The Home layout does not include the markdown text from this file.
 

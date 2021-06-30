@@ -1,5 +1,5 @@
 ---
-layout: stories-with-images
+layout: stories
 title: Welcome to our new Engineering Blog
 description: A short introduction to this new blog sharing our software development journey
 author: graham_brooks

@@ -6,23 +6,23 @@ layout: default
 
 <section class="recent-post">
     <ul>
-        {% for post in site.posts%}
+        {% for post in site.posts reversed %}
         {% assign author = site.data.authors[post.author] %}
         <li style="padding-bottom: 15px">
-            <a style="color: black;" class="blog__title h4 pb-4" href="{{ post.url }}">{{ post.title }}</a>
+            <a style="color: black;" class="h4 pb-4" href="{{ post.url }}">{{ post.title }}</a>
             {% if post.hero.href %}
-                <!-- <div style="overflow: hidden; height: 450px; position: relative; margin: 5px 0 0;"> -->
-                    <img alt="{{post.hero.alt}}" src="{{post.hero.href}}" style="margin-top: 8px; max-width: 100%; max-height: 500px; object-fit: cover; display: block;" />
-                <!-- </div> -->
+            <div>
+                <img alt="{{post.hero.alt}}" src="{{post.hero.href}}" class="hero-image"/>
+            </div>
             {% endif %}
             <p style="padding-bottom: 5px; padding-top: 10px" class="post__desc">{{ post.description }}</p>
             <span style="font-size: 14px"
                   class="postDate">{{ post.date | date: "%b %-d, %Y" }} by {{ author.name }}</span>
-            <div style="padding-bottom:5px; padding-top: 15px"><a class="blog__link" href="{{ post.url }}">Read More<img
+            <div style="padding-bottom:5px; padding-top: 15px"><a href="{{ post.url }}">Read More<img
                     style="padding-left: 10px; padding-bottom: 3px" src="assets/img/arrow-right.png"
                     alt="read article"/> </a></div>
-                    <hr/>
-                </li>
+            <hr/>
+        </li>
         {% endfor %}
     </ul>
 </section>

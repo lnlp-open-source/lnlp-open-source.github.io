@@ -1,5 +1,5 @@
 ---
-layout: stories-with-images
+layout: stories
 title: New job, fully remote, in a global pandemic - how our ways of working helped me feel part of a team
 description: A story about how our engineering team collaborates in a remote set-up 
 author: Emili-BR

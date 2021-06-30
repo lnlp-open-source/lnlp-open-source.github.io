@@ -20,10 +20,10 @@
 
 title: LexisNexis Legal & Professional Engineering
 email: engineering@lexisnexis.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   This blog is curated and maintained by the LexisNexis Product Development Team. Our aim is to provide insights,
   expertise, and commentary on current trends within software engineering.
-disclaimer: >- # this means to ignore newlines until "baseurl:"
+disclaimer: >-
   These blogs are published for information purposes only and can be statements of opinion. Although LexisNexis
   Legal & Professional checks the accuracy of all information at the time of publishing the blogs, no representations
   or warranties are expressed or implied as to the blog, its contents and any accompanying materials and it should not
