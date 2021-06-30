@@ -67,3 +67,10 @@
   border-radius: 50%;
   width: 50px;
 }
+
+.main-container {
+  min-height: 70%;
+  min-height: -webkit-calc(100% - 136px);
+  min-height: -moz-calc(100% - 136px);
+  min-height: calc(100% - 136px);
+}

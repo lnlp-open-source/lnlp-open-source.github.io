@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: LexisNexis Legal & Professional Engineering
+title: LexisNexis&reg; Legal & Professional Engineering
 email: engineering@lexisnexis.com
 description: >-
   This blog is curated and maintained by the LexisNexis Product Development Team. Our aim is to provide insights,
